@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+
+    <style>
+        .todo-elements, .inputs{
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            text-align: center;
+            justify-content: center;
+            column-gap: 10px;
+            align-items: center;
+            row-gap: 10px;
+            font-size: 20px;
+        }
+
+        .inline-elements{
+          
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .paragara{
+            font-family: Arial;
+            font-size: 20px;
+        }
+        .input-text, .input-date{
+            padding: 10px;
+        }
+
+        
+        .add{
+            background-color: rgb(10, 132, 10);
+            font-size: 15px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            height: 40px;
+        }
+
+        .delete{
+            background-color: rgb(219, 10, 10);
+            font-size: 15px;
+            padding: 10px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            width: 100px;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <p class="paragara">To Do List practice 1</p>
+    <div class="inputs">
+        <input type="text" class="input-text" style="display: inline-block; margin-bottom: 00px;" placeholder="ToDo Name"
+            onkeypress="let keytag = event.key;enterKey(keytag); ">
+        <input type="date" class="input-date" style="display: inline-block; margin-bottom: 0px;"
+            onkeypress="keytag = event.key;enterKey(keytag)">
+        <button onclick="activity()" class="add">Add</button>
+    </div>
+    
+    <div class="todo-elements" ></div>
+    
+    
+    <script src="scripts/TODO list.js "></script>
+</body>
+</html>
